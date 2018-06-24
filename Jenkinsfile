@@ -18,7 +18,9 @@ pipeline {
             }
         }
         stage('Copy to') {
+            steps{
             echo "Copying to..."
+            }
         }
     }
 }
