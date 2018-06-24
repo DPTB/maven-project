@@ -14,8 +14,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'please work Deploying.....'
+                echo 'Deploying....'
             }
+        }
+        stage('Copy to') {
+            echo "Copying to..."
         }
     }
 }
