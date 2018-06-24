@@ -17,9 +17,9 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('Copy to') {
+        stage('Deploy to staging') {
             steps{
-            echo "Copying to..."
+            build job: 'Deploy-to-staging'
             }
         }
     }
